@@ -8,6 +8,6 @@
         "numbers"
     ],
     "tests": {
-        "cpp": ["int main() { return absoluteSum([-1], 1) == 1 && absoluteSum([1], 1) == 1 && absoluteSum(); }"]
+        "cpp": ["int main() { return !(absoluteSum({-1}, 1) == 1 && absoluteSum({1}, 1) == 1 && absoluteSum({2, -1, -3, 4, 8}, 5) == 18 && absoluteSum({-1, -3, -5, -4, -10, 0}, 6) == 23 && absoluteSum({8, 9, 10, 32, 101, -10}, 6) == 170 && absoluteSum({500}, 1) == 500); }"]
     }
 }
