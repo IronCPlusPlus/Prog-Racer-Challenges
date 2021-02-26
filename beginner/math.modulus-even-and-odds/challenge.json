@@ -1,0 +1,25 @@
+{
+    "title": "Example Challenge",
+    "difficulty": "Beginner",
+    "instructions": {
+        "c++": [
+            
+        ],
+        "javascript": [
+
+        ]
+    },
+    "hint": {
+        "c++": [
+        ],
+        "*": [
+        ]
+    },
+    "tags": [
+        "strings"
+    ],
+    "tests": {
+        "javascript": ["process.exit(!(1))"],
+        "c++": ["int main() { return !(1); }"]
+    }
+}

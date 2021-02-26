@@ -1,0 +1,27 @@
+{
+    "title": "Absolute Sum",
+    "difficulty": "Beginner",
+    "instructions": {
+        "c++": [
+            ["Example Dialogue for a specific language."]
+        ],
+        "*": [
+            ["Example Dialogue for any unspecified language."]
+        ]
+    },
+    "hint": {
+        "c++": [
+            ["Create a Function called `absoluteSum` with the parameters of `(const int _arr[], const int _size)`"]
+        ],
+        "*": [
+            ["Create a Function called `absoluteSum` with the parameters of `(int _arr[], int _size)`"]
+        ]
+    },
+    "tags": [
+        "example"
+    ],
+    "tests": {
+        "javascript": ["process.exit(!(1);"],
+        "c++": ["int main() { return !(1); }"]
+    }
+}

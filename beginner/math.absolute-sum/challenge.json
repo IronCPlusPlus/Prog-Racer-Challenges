@@ -1,0 +1,37 @@
+{
+    "title": "Absolute Sum",
+    "difficulty": "Beginner",
+    "instructions": {
+        "c++": [
+            ["Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element."],
+            ["__Expected Function Usage:__<code>absoluteSum([2, -1, 4, 8, 10], 5) \u279e 25\n\nabsoluteSum([-3, -4, -10, -2, -3], 5) \u279e 22\n\nabsoluteSum([2, 4, 6, 8, 10], 5) \u279e 30\n\nabsoluteSum([-1], 1) \u279e 1</code>"],
+            ["Notes: The term \"absolute value\" means to remove any negative sign in front of a number, and to think of all numbers as positive (or zero)."]
+        ],
+        "javascript": [
+            ["Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element."],
+            ["__Expected Function Usage:__<code>absoluteSum([2, -1, 4, 8, 10]) \u279e 25\n\nabsoluteSum([-3, -4, -10, -2, -3]) \u279e 22\n\nabsoluteSum([2, 4, 6, 8, 10]) \u279e 30\n\nabsoluteSum([-1]) \u279e 1</code>"],
+            ["Notes: The term \"absolute value\" means to remove any negative sign in front of a number, and to think of all numbers as positive (or zero)."]
+        ]
+    },
+    "hint": {
+        "c++": [
+            ["Create a Function called `absoluteSum` with the parameters of `(const int _arr[], const int _size)`"],
+            ["For each element that is below zero, flip it."],
+            ["Make sure the function has a return type of `int` and the function returns the sum."]
+        ],
+        "*": [
+            ["Create a Function called `absoluteSum` with the parameters of `(int _arr[], int _size)`"],
+            ["For each element that is below zero, flip it."],
+            ["Make sure the function has a return type of `int` and the function returns the sum."]
+        ]
+    },
+    "tags": [
+        "arrays",
+        "math",
+        "numbers"
+    ],
+    "tests": {
+        "javascript": ["process.exit(!(absoluteSum([-1]) == 1 && absoluteSum([1]) == 1 && absoluteSum([2, -1, -3, 4, 8]) == 18 && absoluteSum([-1, -3, -5, -4, -10, 0]) == 23 && absoluteSum([8, 9, 10, 32, 101, -10]) == 170 && absoluteSum([500]) == 500));"],
+        "c++": ["int main() { return !(absoluteSum(new int [] {-1}, 1) == 1 && absoluteSum(new int [] {1}, 1) == 1 && absoluteSum(new int [] {2, -1, -3, 4, 8}, 5) == 18 && absoluteSum(new int [] {-1, -3, -5, -4, -10, 0}, 6) == 23 && absoluteSum(new int [] {8, 9, 10, 32, 101, -10}, 6) == 170 && absoluteSum(new int [] {500}, 1) == 500); }"]
+    }
+}
