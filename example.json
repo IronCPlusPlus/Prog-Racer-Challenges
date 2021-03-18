@@ -21,7 +21,11 @@
         "example"
     ],
     "tests": {
-        "javascript": ["process.exit(!(1);"],
-        "c++": ["int main() { return !(1); }"]
+        "javascript": [
+            "1"
+        ],
+        "c++": [
+            "1"
+        ]
     }
 }

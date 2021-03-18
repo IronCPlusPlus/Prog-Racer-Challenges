@@ -1,25 +1,49 @@
 {
-    "title": "Example Challenge",
+    "title": "Calculate the amount of Vowels in a String",
     "difficulty": "Beginner",
     "instructions": {
         "c++": [
-            
+            "Take an array of characters and return a sum of all the vowels in any given string.",
+            [   "Usage:",
+                "`calcVowels(\"The lazy dog jumped over the quick brown fox\", 44)` \u279e `12`",
+                "`calcVowels(\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\", 151)` \u279e `37`"
+            ]
         ],
         "javascript": [
-
+            "Take an array of characters and return a sum of all the vowels in any given string.",
+            [   "Usage:",
+                "`calcVowels(\"The lazy dog jumped over the quick brown fox\")` \u279e `12`",
+                "`calcVowels(\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\")` \u279e `37`"
+            ]
         ]
     },
     "hint": {
         "c++": [
+            "Create a `int` returning function called `calcVowels` that takes in `(const char *_str, const size_t _size)`.",
+            "Iterate through each character, and check if they are a vowel.",
+            "Ensure that you are returning the sum as an `int`"
         ],
         "*": [
+            "Create a function called `calcVowels` that takes in `(_str, _size)`.",
+            "Iterate through each character, and check if they are a vowel.",
+            "Ensure that you are returning the sum as an `int`"
         ]
     },
     "tags": [
-        "strings"
+        "logic",
+        "strings",
+        "arrays"
     ],
     "tests": {
-        "javascript": ["process.exit(!(1))"],
-        "c++": ["int main() { return !(1); }"]
+        "javascript": [
+            "calcVowels(\"The lazy dog jumped over the quick brown fox\") == 12", 
+            "calcVowels(\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\") == 37",
+            "calcVowels(\"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.\") == 48"
+        ],
+        "c++": [
+            "calcVowels(\"The lazy dog jumped over the quick brown fox\", 44) == 12",
+            "calcVowels(\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\", 151) == 37",
+            "calcVowels(\"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.\", 163) == 48"
+        ]
     }
 }

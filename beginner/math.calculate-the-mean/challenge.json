@@ -1,25 +1,39 @@
 {
-    "title": "Example Challenge",
+    "title": "Calculate the Mean",
     "difficulty": "Beginner",
     "instructions": {
         "c++": [
-            
+            "Given an array of integers, calculate the mean and return the result the of mean.",
+            [
+                "__Expected Usage:__",
+                "`calculateMean(new int[] {3,4,2,1,8}, 5)` \u279e `3.6f`",
+                "`calculateMean(new int[] {124,10,38,1000}, 4)` \u279e `293f`",
+                "`calculateMean(new int[] {1415,624,23523,553,1354,6373,24}, 7)` \u279e `4838f`"
+            ]
         ],
-        "javascript": [
-
+        "*": [
+            "Given an array of integers, calculate the mean and return the result the of mean.",
+            [
+                "__Expected Usage:__",
+                "`calculateMean([3,4,2,1,8])` \u279e `3.6f`",
+                "`calculateMean([124,10,38,1000])` \u279e `293f`",
+                "`calculateMean([1415,624,23523,553,1354,6373,24])` \u279e `4838f`"
+            ]
         ]
     },
     "hint": {
-        "c++": [
-        ],
         "*": [
+            "Create a float returning function called `calculateMean` with the parameters of `(const int* _arr, const size_t _size)`",
+            "Iterate through all the integers, and sum them up.",
+            "Mean = sum / amountOfItems."
         ]
     },
     "tags": [
-        "strings"
+        "math",
+        "arrays"
     ],
     "tests": {
-        "javascript": ["process.exit(!(1))"],
-        "c++": ["int main() { return !(1); }"]
+        "javascript": [],
+        "c++": []
     }
 }

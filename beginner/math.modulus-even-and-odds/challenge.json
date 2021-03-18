@@ -1,25 +1,47 @@
 {
-    "title": "Example Challenge",
+    "title": "Evens & Odds",
     "difficulty": "Beginner",
     "instructions": {
-        "c++": [
-            
-        ],
-        "javascript": [
-
+        "*": [
+            "Given a value, can you determine if the value is a Even or Odd.",
+            [
+                "__Expected Usage:__",
+                "`isEven(12)` \u279e `true`",
+                "`isEven(13)` \u279e `false`",
+                "`isOdd(12)` \u279e `false`",
+                "`isOdd(13)` \u279e `true`"
+            ]
         ]
     },
     "hint": {
-        "c++": [
-        ],
         "*": [
+            "Evens are: 2, 4, 6, 8, 10, 12, etc... every second including zero-th place.",
+            "% is the operator for modulus."
         ]
     },
     "tags": [
-        "strings"
+        "logic",
+        "modulus",
+        "math"
     ],
     "tests": {
-        "javascript": ["process.exit(!(1))"],
-        "c++": ["int main() { return !(1); }"]
+        "javascript": [
+            "isEven(12) == true",
+            "isEven(13) == false",
+            "isOdd(12) == false",
+            "isOdd(13) == true",
+            
+            "isEven(0) == true",
+            "isOdd(0) == false"
+        ],
+        "c++": [
+            "isEven(12) == true",
+            "isEven(13) == false",
+            "isOdd(12) == false",
+            "isOdd(13) == true",
+            
+            "isEven(0) == true",
+            "isOdd(0) == false"
+        ]
     }
 }
