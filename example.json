@@ -9,7 +9,7 @@
             ["Example Dialogue for any unspecified language."]
         ]
     },
-    "hint": {
+    "hints": {
         "c++": [
             ["Create a Function called `absoluteSum` with the parameters of `(const int _arr[], const int _size)`"]
         ],

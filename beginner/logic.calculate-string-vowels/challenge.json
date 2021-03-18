@@ -17,15 +17,17 @@
             ]
         ]
     },
-    "hint": {
+    "hints": {
         "c++": [
             "Create a `int` returning function called `calcVowels` that takes in `(const char *_str, const size_t _size)`.",
             "Iterate through each character, and check if they are a vowel.",
+            "Ensure that capital-cased characters are lower-cased.",
             "Ensure that you are returning the sum as an `int`"
         ],
         "*": [
             "Create a function called `calcVowels` that takes in `(_str, _size)`.",
             "Iterate through each character, and check if they are a vowel.",
+            "Ensure that capital-cased characters are lower-cased.",
             "Ensure that you are returning the sum as an `int`"
         ]
     },

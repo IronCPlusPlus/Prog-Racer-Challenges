@@ -7,6 +7,9 @@ function calcVowels(_str)
     for(var i = 0; i < _size; i++)
     {
         const pull = _str[i];
+        // Ensure that capital-cased characters are lower-cased.
+        if (pull >= 65 && pull <= 90)
+            pull += 32;
         for (var j = 0; j < 5; j++)
         {
             if (vowels[j] == pull)

@@ -21,7 +21,7 @@
             ]
         ]
     },
-    "hint": {
+    "hints": {
         "*": [
             "Create a float returning function called `calculateMean` with the parameters of `(const int* _arr, const size_t _size)`",
             "Iterate through all the integers, and sum them up.",
@@ -33,7 +33,17 @@
         "arrays"
     ],
     "tests": {
-        "javascript": [],
-        "c++": []
+        "javascript": [
+            "calculateMean([3,4,2,1,8]) == 3.6",
+            "calculateMean([124,10,38,1000]) == 293",
+            "calculateMean([1415,624,23523,553,1354,6373,24]) == 4838",
+            "calculateMean([1, 2, 4, 8, 16, 32, 64, 128]) == 31.875"
+        ],
+        "c++": [
+            "calculateMean(new int[] {3,4,2,1,8}, 5) == 3.6",
+            "calculateMean(new int[] {124,10,38,1000}, 4) == 293",
+            "calculateMean(new int[] {1415,624,23523,553,1354,6373,24}, 7) == 4838",
+            "calculateMean(new int[] {1, 2, 4, 8, 16, 32, 64, 128}, 8) == 31.875"
+        ]
     }
 }
